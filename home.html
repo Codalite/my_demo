@@ -1,27 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>codalite demo page</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+
 </head>
+
 <body id="body">
+
+<header>
+    <nav>
+        <div class="brand">
+            <img src="" alt="logo">
+            <h2>Codalite</h2>
+        </div>
+        
+            <ul class="navbar">
+                <li class="nav-item">Home</li>
+                <li class="nav-item">About</li>
+                <li class="nav-item">Contact</li>
+                <li class="nav-item">Gallery</li>
+                <li class="nav-item">FAQs</li>
+            </ul>
+        <button class="menu-btn">Menu</button>
+    </nav>
+
+</header>
+
+
+
+
+
+
+
+
+
+    <label for="theme">Toggle Theme</label>
+    <input type="checkbox" id="theme">
     <h1>Let's keep it going with coding</h1>
     <p>Welcome to the Codalite demo page!</p>
     <p>Here you can find various coding examples and resources.</p>
-    
-    <a href="./index.html">Go to index</a>
-    
-    <form action="" method="get">
-        <ul>
+
+    <a style="float: right;" href="./index.html">Go to index</a>
+
+    <button class="btn-meny ">
+        Hide menu
+    </button>
+
+    <form class="theme-light" action="" method="get">
+        <ul id="list" class="menu">
             <li><a href="https://www.example.com/tutorials">Tutorials</a></li>
             <li><a href="https://www.example.com/examples">Code Examples</a></li>
             <li><a href="https://www.example.com/resources">Resources</a></li>
         </ul>
+        <ul class="menu ">
+            <li><a href="https://www.example.com/tutorials">Tutorials 1</a></li>
+            <li><a href="https://www.example.com/examples">Code Examples 1</a></li>
+            <li><a href="https://www.example.com/resources">Resources 1</a></li>
+        </ul>
+
+
         <input type="text" name="search" placeholder="Search...">
         <button type="submit">Search</button>
     </form>
- <script src="./static/js/script.js"></script>
-    
+    <script src="./static/js/script.js"></script>
+    <!-- <script src="./static/js/theme.js"></script> -->
+
 </body>
+
 </html>

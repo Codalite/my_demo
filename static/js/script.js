@@ -1,77 +1,102 @@
 
-// let,var, const
-const num=3
+const bodyEl = document.getElementById('body')
 
-var num2;
-num2='3.4'
-const list=[1,2,3,4,8,5]
-// list.push([12,5,6,8,9,])
-// console.log(list.toLocaleString().replaceAll(','," ").split(' ').length)
-// console.log(list)
-// for (let index = 0; index < list.length; index++) {
-//     const element = list[index];
-//    console.log(index,element);
-   
+const div = document.createElement('div')
+let anchor = document.createElement("a")
+
+bodyEl.append(div)
+
+const html = document.getElementsByTagName('html')[0]
+
+// console.log(html);
+
+div.innerText = "this is the div"
+
+anchor.href = "/index.html"
+
+anchor.innerHTML = "<strong style='color:green'>Hello from innerHTML in anchor</strong>"
+
+div.append(anchor)
+// console.log(document);
+
+
+// let btntheme = document.getElementById('theme')
+// btntheme.addEventListener("click", function (e) {
+//     window.syste
+//      html.classList.toggle('theme-dark') })
+
+
+let js_obj={name:"jackson"}
+
+let es={
+  "name": "John Doe",
+  "age": 30,
+  "isStudent": false,
+  "skills": ["JavaScript", "Python", "HTML"],
+  "address": {
+    "street": "123 Main St",
+    "city": "New York",
+    "zip": "10001"
+  }
+}
+const objs=[
+  {
+    "id": 1,
+    "product": "Laptop",
+    "price": 1200.99,
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "product": "Smartphone",
+    "price": 799.49,
+    "inStock": false
+  }
+]
+
+let obj={
+  "company": "Tech Solutions",
+  "employees": [
+    {
+      "name": "Alice",
+      "role": "Developer",
+      "languages": ["Java", "C++"]
+    },
+    {
+      "name": "Bob",
+      "role": "Designer",
+      "tools": ["Photoshop", "Illustrator"]
+    }
+  ]
+}
+
+
+const list=document.querySelectorAll("li")
+// let list_children=list.children
+
+// for( index in list_children){
+//     const li=list_children[index].firstChild.style="color:red;background:pink"
+//     console.log(li);
+    
+
 // }
-// console.log("using for in loop");
-
-// for(let i in list){
-//     if(i){
-//         console.log("is an array")
-        
+let count=1;
+// list.forEach(function(li){
+//     if (count%2===0){
+//       li.style.color="red"
+//       li.firstChild.innerText =li.firstChild.innerText+" "+" from js "
+//     }else{
+//       li.style.color="skyblue"
 //     }
-//     console.log(list[i]);
+//     console.log(count);
     
-// }
-
-
-// let list2=Array();
-// list2.push(...list)
-
-// list2.forEach((value,index)=>{
-//     console.log(value,index);
+//     count++
+    
     
 // })
-// let str="hello there".split(' ')
-// str.forEach(function(v,i){
-// console.log(v,i);
 
-// })
-// console.log(list2);
-
-
-function nameUpper(name){
-    console.log(name);
-    
-   return name.toUpperCase()
-    
-}
-function nameLength(name){
-    let upName=nameUpper(name)
-    return [upName.length,upName]
-}
-
-function main(name="franck",et){
-    console.log(et);
-    
-let result = nameLength(name)
-
-
-return result
-}
-console.log(...main(name="luis",6))
-
-// let func=function(){
-//     console.log("anonymous function");
-    
-// }
-// let arrowFunc=()=>{
-//     console.log("Arrow function");
-    
-// }
-
-// arrowFunc()
-// func()
-// jackUpper(name="jack")
-// jackUpper(name="wilson")
-// jackUpper(name="smith")
+// console.log(list);
+let menu=document.querySelector(".navbar")
+document.querySelector('.menu-btn').addEventListener('click',e=>{
+ menu.classList.toggle('show')
+})

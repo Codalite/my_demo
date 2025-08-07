@@ -1,0 +1,74 @@
+.theme-dark {
+    background-color: rgba(41, 40, 40, 0.733);
+    color: whitesmoke;
+}
+
+.theme-light {
+    background-color: rgb(245, 245, 245);
+    color: rgba(41, 40, 40, 0.733);
+}
+
+
+
+header {
+    background: #000000a9;
+}
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar,
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.brand {
+    flex: 20% 1, 0;
+}
+
+.navbar {
+    flex-basis: min(200px, 80%);
+    flex-grow: 1;
+}
+.menu-btn{
+    display: none;
+}
+.show {
+        display: block !important;
+        flex-direction: column;
+        background: skyblue;
+        color: whitesmoke;
+        position: fixed;
+        right: 8px;
+        top: 49px;
+        ;
+        width: 50%;
+        height: 200px;
+
+    }
+
+@media (max-width:610px) {
+    .navbar {
+        display: none;
+    }
+
+    
+
+    .nav-item {
+        text-align: center;
+        list-style: circle;
+        align-content: space-between;
+        align-items: stretch;
+        justify-content: space-between;
+
+    }
+    .menu-btn{
+    display: block;
+}
+}
